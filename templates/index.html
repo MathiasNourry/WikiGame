@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <title>Objectif philosophie</title>
+  </head>
+  <body>
+
+    <h1>Tous les chemins mènent à la philosophie</h1>
+    
+    {% block body %}
+
+      <form action="/new-game" method="POST">
+
+        <br><br><br>
+        
+        <h3>Page de départ  :</h3>
+        <input type="text" name="start"><br>
+        <button class="start_button">En avant !</button> 
+
+      </form>
+
+      <br><br><br>
+
+      {% with messages = get_flashed_messages() %}
+
+        {% if 'Perdu' in messages[-1] %}
+          <p class="flashes_loose">{{messages[-1]}}</p>
+        {% else %}
+          {% if 'Victoire' in messages[-1] %}
+            <p class="flashes_win">{{messages[-1]}}</p>
+          {% else %}
+            <p class="flashes_neutral">{{messages[-1]}}</p>
+          {% endif %}
+        {% endif %}
+
+      {% endwith %}
+
+    {% endblock %}
+
+  </body>
+</html>

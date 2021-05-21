@@ -1,0 +1,52 @@
+{% extends "index.html" %}
+{% block body %}
+
+    <div class="columns_container">
+
+        <!-- Current article -->
+        <div class="article_div">
+            <p><strong>Page actuelle : </strong>{{session.title}}</p>
+        </div>
+
+        <!-- Current score -->
+        <div class="score_div">
+            <p><strong>Score actuel : </strong>{{score}}</p>
+        </div>
+
+    </div>
+
+    <!-- Links related -->
+    <form action="/move" method="POST"> 
+
+        <div class="game_form_div">
+
+            <h3>Liens</h3>
+
+            <div style="text-align: left">
+
+                {% for link in session.links %}
+                    {% if link == session.links[0] %}
+                        <input type="radio" id='{{link}}' name="destination" value='{{link}}' checked>
+                        <label for='{{link}}'>{{link}}</label>
+                        <br>
+                    {% else %}
+                        <input type="radio" id='{{link}}' name="destination" value='{{link}}'>
+                        <label for='{{link}}'>{{link}}</label>
+                        <br>
+                    {% endif %}
+                {% endfor %}
+
+            </div>
+
+        </div>
+
+        <br>
+
+        <input type="hidden" name="score_data" value={{score}}>
+
+        <button class="validation_button" name="action" value="validate">Valider</button> 
+        <button class="leave_button" name="action" value="leave">Abandonner</button> 
+
+    </form>
+
+{% endblock %}

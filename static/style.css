@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css?family=Titan+One");
+
+:root {
+    /* Body color */
+    --BodyBackgroundColor: #f6f1d1;
+
+    /* Start button color */
+    --StartButtonBorderColor: #6aa389;
+    --StartButtonBackgroundColor: #cdffe8;
+    --StartButtonShadowBackgroundColor: #79ba9c;
+    --StartButtonHoverBackgroundColor: #bbe8d3;
+
+    /* Validation button color */
+    --ValidationButtonBorderColor: #6aa389;
+    --ValidationButtonBackgroundColor: #cdffe8;
+    --ValidationButtonShadowBackgroundColor: #79ba9c;
+    --ValidationButtonHoverBackgroundColor: #bbe8d3;
+
+    /* Leave button color */
+    --LeaveButtonBorderColor: #a36a6a;
+    --LeaveButtonBackgroundColor: #ffcdcd;
+    --LeaveButtonShadowBackgroundColor: #ba7979;
+    --LeaveButtonHoverBackgroundColor: #e8bbbb;
+
+    /* Article div color */
+    --ArticleBorderColor: #6a9fa3;
+    --ArticleBackgroundColor: #cdf5ff;
+    --ArticleShadowBackgroundColor: #79b2ba;
+
+    /* Score div color */
+    --ScoreBorderColor: #6a9fa3;
+    --ScoreBackgroundColor: #cdf5ff;
+    --ScoreShadowBackgroundColor: #79b2ba;
+    
+    /* Game div color */
+    --GameBorderColor: #6a74a3;
+    --GameBackgroundColor: #cdd0ff;
+    --GameShadowBackgroundColor: #7983ba;
+    --GameSelectedColor: #924d8b;
+
+  }
+
+
+/* BODY STYLE */
+
+body {
+    background-color: var(--BodyBackgroundColor);
+    font-family: "Titan One";
+    font-size: 1.5em;
+    color: #6a74a3;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* TITLE AND SUBTITLES STYLE */ 
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    background-image: linear-gradient(to left, #ba7979, #7983ba, #79b2ba, #79ba9c);   
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+/* INPUT TEXT STYLE */
+
+input[type=text] {
+    text-align: center;
+    font-family: "Titan One";
+    font-size: 1.5em;
+    color: #6a74a3;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+/* FLASH MESSAGE STYLE */
+
+.flashes_loose {
+    color: #a13636;
+    white-space: pre-wrap;
+    font-size: 1.5em;
+}
+
+.flashes_win {
+    color: #44d393;
+    white-space: pre-wrap;
+    font-size: 1.5em;
+}
+
+.flashes_neutral {
+    color: #8a8282;
+    white-space: pre-wrap;
+    font-size: 1.5em;
+}
+
+/* BUTTON STYLE */
+
+button {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Titan One";
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 1em 2em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+button:hover {
+    transform: translate(0, 0.3em);
+}
+
+button.start_button {
+    border: 2px solid var(--StartButtonBorderColor);
+    color: var(--StartButtonBorderColor);
+    background: var(--StartButtonBackgroundColor);
+    box-shadow: 0 0.5em var(--StartButtonShadowBackgroundColor);
+}
+
+button.start_button:hover {
+    background: var(--StartButtonHoverBackgroundColor);
+    box-shadow: 0 0.2em var(--StartButtonShadowBackgroundColor);
+}
+
+button.validation_button {
+    border: 2px solid var(--ValidationButtonBorderColor);
+    color: var(--ValidationButtonBorderColor);
+    background: var(--ValidationButtonBackgroundColor);
+    box-shadow: 0 0.5em var(--ValidationButtonShadowBackgroundColor);
+}
+
+button.validation_button:hover {
+    background: var(--ValidationButtonHoverBackgroundColor);
+    box-shadow: 0 0.2em var(--ValidationButtonShadowBackgroundColor);
+}
+
+button.leave_button {
+    border: 2px solid var(--LeaveButtonBorderColor);
+    color: var(--LeaveButtonBorderColor);
+    background: var(--LeaveButtonBackgroundColor);
+    box-shadow: 0 0.5em var(--LeaveButtonShadowBackgroundColor);
+}
+
+button.leave_button:hover {
+    background: var(--LeaveButtonHoverBackgroundColor);
+    box-shadow: 0 0.2em var(--LeaveButtonShadowBackgroundColor);
+}
+
+
+/* COLUMNS CONTAINER DIV STYLE */
+
+.columns_container {
+    position: relative;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 1em;
+}
+.columns_container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+ 
+/* ARTICLE DIV STYLE */
+
+.article_div {
+    width: 40%;
+    float: left;
+    color: var(--ArticleBorderColor);
+    padding: 0.3em 0.6em;
+    border: 2px solid var(--ArticleBorderColor);
+    border-radius: 1em;
+    background: var(--ArticleBackgroundColor);
+    box-shadow: 0 0.5em var(--ArticleShadowBackgroundColor);
+}
+
+/* SCORE DIV STYLE */
+
+.score_div {
+    width: 40%;
+    float: right;
+    color: var(--ScoreBorderColor);
+    padding: 0.3em 0.6em;
+    border: 2px solid var(--ScoreBorderColor);
+    border-radius: 1em;
+    background: var(--ScoreBackgroundColor);
+    box-shadow: 0 0.5em var(--ScoreShadowBackgroundColor);
+}
+
+/* GAME FORM DIV STYLE */
+
+.game_form_div {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1em;
+    vertical-align: middle;
+    color: var(--GameBorderColor);
+    padding: 1em 2em;
+    border: 2px solid var(--GameBorderColor);
+    border-radius: 1em;
+    background: var(--GameBackgroundColor);
+    box-shadow: 0 0.5em var(--GameShadowBackgroundColor);
+}
+
+/* INPUT RADIO STYLE */
+
+input[type="radio"] {
+    text-align: left;
+}
+
+input[type="radio"]:checked + * {
+    color : var(--GameSelectedColor);
+}
