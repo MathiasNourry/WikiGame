@@ -8,6 +8,8 @@ The objective of this game is to explore the different Wikipedia links in order 
   <img src="img.png"/>
 </p>
 
+PS: This game is designed to be used in French.
+
 ## How does it work ?
 
 The operation is based on the interconnection of the different wikipedia pages. Indeed, many articles refer to other wikipedia pages in order to offer the reader the possibility to know more about a subject. These interconnections allow you to go from the "Cyclisme" page to the "Tour de France" page in one click. If we have fun pushing the thing we can, in several clicks, go from the "Chat" page to the "Philosophie" page (tested and approved) and that's exactly what we allow you to do here.
