@@ -16,7 +16,7 @@ PS: This game is designed to be used in French.
 The operation is based on the interconnection of the different Wikipedia pages. Indeed, many articles refer to other Wikipedia pages in order to offer the reader the possibility to know more about a subject. These interconnections allow you to go from the "Cyclisme" page to the "Tour de France" page in one click. If we have fun pushing the thing we can, in several clicks, go from the "Chat" page to the "Philosophie" page (tested and approved) and that's exactly what we allow you to do here.
 Also, it is important to specify that the application developed is based only on the internal interconnections to Wikipedia and omits the links to external pages. 
 
-## And technically?
+## And technically ?
 
 The game is developed from the Flask library which allows the backend interfacing of the application. It is here :
 - retrieve the information provided by the user and the interaction events generated ;
