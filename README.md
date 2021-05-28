@@ -1,4 +1,6 @@
-# WikiGame
+<h1 align="center">
+  Wikipedia game based on Flask package
+</h1>
 
 ## How do we play ?
 
